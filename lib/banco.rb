@@ -1,10 +1,14 @@
 class Banco
-@monto =0 
-
+@monto
+def initialize()
+    @monto = 0
+end
 def getSaldo()
-    return @monto
+    return @monto.to_s
 end
 
 def abonar(cant)
     @monto = @monto + cant
+end
+
 end
